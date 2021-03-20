@@ -1,0 +1,31 @@
+/* //menunjuk langsung pada bagian html */
+body {
+    font-family: arial;
+}
+
+/* //menunjuk langsung pada sintaks */
+h1,
+h2 {
+    color: green;
+}
+
+/* 
+//menunjuk pada isi dalam list */
+ul li a {
+    color: red;
+}
+
+/* //menggunakan id */
+#p1 {
+    color: orange;
+}
+
+/* //menggunakan class */
+.p2 {
+    color: blue;
+}
+
+/* //menggunakan paragraf pada class tertentu */
+p.p2 {
+    font-style: italic;
+}
