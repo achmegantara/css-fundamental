@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+</head>
+<style>
+    .kotak {
+        width: 200px;
+        height: 200px;
+        background-color: salmon;
+        /* transition: 2s ease all; <== cara 1 */
+    }
+
+    /* 
+Format:
+
+animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state]
+
+name = nama fungsi animasi
+duration = durasi animasi
+timing-function = 
+iteration-count = jumlah berapa kali animasi dijalankan (angka/infinite)
+direction = urutan animasi dijalankan (normal/reverse/alternate/alternate-reverse)
+fill-mode = untuk menentukan akhir dari transisinya seperti apa (none/forwards/backwards/both)
+play-state = (running/paused)
+
+
+ */
+
+    .kotak:hover {
+        /* width: 500px; <== cara 2*/
+        animation: animasiKotak 2s ease 2 alternate forwards running;
+    }
+
+    @keyframes animasiKotak {
+        0% {
+            width: 200px;
+        }
+
+        50% {
+            width: 500px;
+            height: 200px;
+        }
+
+        100% {
+            width: 500px;
+            height: 500px;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="kotak"></div>
+
+</body>
+
+</html>
